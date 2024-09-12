@@ -1,6 +1,6 @@
 package com.github.ohwowdavid.togglesprint.mixin;
 
-import com.github.ohwowdavid.togglesprint.ExampleMod;
+import com.github.ohwowdavid.togglesprint.SimpleToggleSprint;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.settings.KeyBinding;
 import org.spongepowered.asm.mixin.Mixin;
@@ -15,7 +15,7 @@ public class MixinMinecraft {
     private void injected(CallbackInfo ci) {
         KeyBinding sprintkey = Minecraft.getMinecraft().gameSettings.keyBindSprint;
         if (sprintkey.isPressed( )) {
-            ExampleMod.sprintState = !ExampleMod.sprintState;
+            SimpleToggleSprint.sprintState = !SimpleToggleSprint.sprintState;
 
         }
     }
