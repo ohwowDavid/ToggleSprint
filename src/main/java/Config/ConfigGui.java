@@ -5,6 +5,7 @@ import net.minecraft.client.gui.GuiScreen;
 
 import java.io.IOException;
 
+
 public class ConfigGui extends GuiScreen {
 
     int lastClickedButton = 0;

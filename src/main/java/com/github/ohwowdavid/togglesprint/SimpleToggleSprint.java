@@ -10,6 +10,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 
+
 @Mod(modid = "togglesprint", version="1.0", useMetadata=true, clientSideOnly = true)
 public class SimpleToggleSprint {
     public static boolean sprintState;
